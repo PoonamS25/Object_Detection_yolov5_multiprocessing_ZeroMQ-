@@ -62,9 +62,6 @@ def detection(source):
     #output.write(frame)
     return frame
 
-
-
-
 context = zmq.Context()
 client_socket = context.socket(zmq.PULL)
 client_socket.connect("tcp://localhost:5555")
