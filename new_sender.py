@@ -34,7 +34,7 @@ while True:
             pass
     cnt += 1
     ret, frame = vid.read()
-    frame = imutils.resize(frame, width=480, inter=cv2.INTER_CUBIC)
+    frame = imutils.resize(frame, width=480)
     encoded, buffer = cv2.imencode('.jpg', frame, [cv2.IMWRITE_JPEG_QUALITY, 80])
     data = base64.b64encode(buffer)
     server_socket.send_pyobj(data)
