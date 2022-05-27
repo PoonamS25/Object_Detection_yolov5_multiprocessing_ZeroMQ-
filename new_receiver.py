@@ -20,10 +20,13 @@ def score_frame(frame):
     :param frame: input frame in numpy/list/tuple format.
     :return: Labels and Coordinates of objects detected by model in the frame.
     """
+    start_time = time.time()
     model.to(device)
     frame = [frame]
     detects = model(frame)
+    inference_latency = (time.time() - start_time) * 1000
     labels, cord = detects.xyxyn[0][:, -1], detects.xyxyn[0][:, :-1]
+    print(inference_latency)
     return labels, cord
 
 
