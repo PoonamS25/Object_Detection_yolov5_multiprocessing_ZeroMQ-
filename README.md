@@ -7,4 +7,4 @@ Data always flows down the pipeline, and each stage of the pipeline is connected
 
 Here I am using threading to process frames and save it into queue.
 
-https://sharing.clickup.com/clip/p/t37441271/173bfba1-215e-4c0c-8c68-18ae0c1028f3/screen-recording-2022-05-06-18%3A42.webm?open=true?open=true
+
