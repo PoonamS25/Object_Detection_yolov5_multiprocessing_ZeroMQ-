@@ -7,4 +7,8 @@ Data always flows down the pipeline, and each stage of the pipeline is connected
 
 Here I am using threading to process frames and save it into queue.
 
+![Screenshot from 2022-06-01 18-06-21](https://user-images.githubusercontent.com/101706028/171406708-acede1e1-0ac4-4317-b446-e931ecebe940.png)
+
+The Frames Per Second(FPS) depend on which GPU have you used. I got around 22FPS and inference lancy as 19ms.
+
 
